@@ -5,7 +5,8 @@
     "pages/member/member",
     "pages/news/news",
     "pages/goods/goods",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/pics/pics"
   ],
   "subPackages": [],
   "window": {
@@ -44,5 +45,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
