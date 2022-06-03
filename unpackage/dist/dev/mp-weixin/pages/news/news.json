@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "资讯信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "news-item": "/components/news-item/news-item"
+  }
 }

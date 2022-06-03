@@ -13,7 +13,10 @@
         }
         ,{
             "path" : "pages/news/news",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "资讯信息",
+				"enablePullDownRefresh": false
+			}
         }
         ,{
             "path" : "pages/goods/goods",
@@ -38,6 +41,15 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "社区图片",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/news-detail/news-detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
                 "enablePullDownRefresh": false
             }
             

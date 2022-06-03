@@ -6,9 +6,8 @@
 		</scroll-view>
 		<scroll-view class="right" scroll-y>
 			<view class="item" v-for="item in rightData" :key="item.id">
-				<image :src="item.imgUrl">
-				</image>
-				<view class="title">{{item.title}}{{item.title}}{{item.title}}{{item.title}}{{item.title}}</view>
+				<image @click="previewImg(item.imgUrl)" :src="item.imgUrl"></image>
+				<view class="title">{{item.title}}</view>
 			</view>
 			<text v-if="noData">暂无数据</text>
 		</scroll-view>
@@ -63,7 +62,17 @@
 					this.noData = true;
 				}
 				this.rightData = list;
-			}
+			},
+			// 图片预览
+			previewImg(current){
+				const urls = this.rightData.map(item=>{
+					return item.imgUrl
+				})
+				uni.previewImage({
+					current,
+					urls,
+				})
+			},
 		}
 	}
 </script>

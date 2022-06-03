@@ -23,10 +23,10 @@
 </template>
 
 <script>
-	import goodsList from '../../components/goods-list/goods-list.vue'
+	import GoodsList from '../../components/goods-list/goods-list.vue'
 	export default {
 		components: {
-			'goods-list': goodsList
+			'goods-list': GoodsList
 		},
 		data() {
 			return {
