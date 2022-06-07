@@ -1,7 +1,7 @@
 <template>
 	<view class="news_detail">
 		<swiper indicator-dots>
-			<swiper-item v-for="item in newsDetail.pics" :key="item.goods_id">
+			<swiper-item v-for="(item,index) in newsDetail.pics" :key="item.goods_id+index">
 				<image :src="item.pics_big_url"></image>
 			</swiper-item>
 		</swiper>
