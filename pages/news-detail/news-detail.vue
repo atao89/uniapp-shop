@@ -75,10 +75,15 @@
 				this.newsDetail = res.message;
 			},
 			onClick(e) {
-				uni.showToast({
-					title: `点击${e.content.text}`,
-					icon: 'none'
-				})
+				// uni.showToast({
+				// 	title: `点击${e.content.text}`,
+				// 	icon: 'none'
+				// })
+				if (e.index == 2) {
+					uni.switchTab({
+						url: '/pages/cart/cart?id=' + this.newsDetail.goods_id
+					})
+				}
 			},
 			buttonClick(e) {
 				console.log(e)

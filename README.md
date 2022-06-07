@@ -6,4 +6,4 @@
  * @LastEditors: 周涛
  * @LastEditTime: 2022-05-17 22:08:28
 -->
-# 练习使用uniapp搭建app应用
+# 使用uniapp搭建商城app应用
